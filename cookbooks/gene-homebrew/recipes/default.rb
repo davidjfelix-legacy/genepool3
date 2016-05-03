@@ -6,3 +6,10 @@
 
 include_recipe 'adminuser::default'
 include_recipe 'homebrew::default'
+
+homebrew_tap 'caskroom/cask'
+
+package 'brew-cask' do
+  action :install
+end
+
