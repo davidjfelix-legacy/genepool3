@@ -9,3 +9,4 @@ when 'alpine', 'amazon', 'arch', 'centos', 'fedora', 'freebsd', 'gentoo', 'oracl
   default['adminuser']['group'] = 'wheel'
 when 'windows'
   default['adminuser']['group'] = 'Administrators'
+end

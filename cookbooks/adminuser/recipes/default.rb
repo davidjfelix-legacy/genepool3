@@ -7,7 +7,6 @@
 user node['adminuser']['username'] do
   comment 'An administrative user used for the hatchery setup'
   manage_home false
-  supports
   system true
   action :create
 end
