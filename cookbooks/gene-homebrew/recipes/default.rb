@@ -9,7 +9,5 @@ include_recipe 'homebrew::default'
 
 homebrew_tap 'caskroom/cask'
 
-package 'brew-cask' do
-  action :install
-end
+package 'brew-cask'
 
