@@ -1,5 +1,6 @@
 source 'https://supermarket.chef.io'
 
+cookbook 'adminuser', path: '../adminuser'
 cookbook 'gene-homebrew', path: '../gene-homebrew'
 
 metadata

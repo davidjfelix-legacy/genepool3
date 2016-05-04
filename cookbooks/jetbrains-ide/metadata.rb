@@ -6,4 +6,5 @@ description 'Installs/Configures jetbrains'
 long_description 'Installs/Configures jetbrains'
 version '0.1.0'
 
+depends 'adminuser', '~> 0.1.0'
 depends 'gene-homebrew', '~> 0.1.0'
