@@ -1,5 +1,10 @@
-#
-# Cookbook Name:: opt
-# Recipe:: default
-#
-# Copyright (c) 2016 The Authors, All Rights Reserved.
+
+include_recipe 'adminuser::default'
+
+directory '/opt/' do
+  owner node['adminuser']['username']
+  group node['adminuser']['group']
+  mode 755
+  action :create
+end
+
