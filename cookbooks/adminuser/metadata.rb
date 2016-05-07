@@ -6,6 +6,6 @@ description 'Installs/Configures adminuser'
 long_description 'Installs/Configures adminuser'
 version '0.1.0'
 
-%w(alpine amazon arch centos debian fedora freebsd gentoo mac_os_x oracle redhat scientific slackware ubuntu).each do |os|
+%w(alpine amazon arch centos debian fedora freebsd gentoo mac_os_x mac_os_x_server oracle redhat scientific slackware ubuntu windows).each do |os|
   supports os
 end
