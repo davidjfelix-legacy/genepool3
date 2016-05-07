@@ -1,0 +1,7 @@
+name 'gene-squid'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures gene-squid'
+long_description 'Installs/Configures gene-squid'
+version '0.1.0'
