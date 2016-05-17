@@ -1,0 +1,7 @@
+name 'gene-vim'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures gene-vim'
+long_description 'Installs/Configures gene-vim'
+version '0.1.0'
