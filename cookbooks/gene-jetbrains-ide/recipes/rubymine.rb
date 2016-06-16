@@ -1,7 +1,7 @@
 case node['platform_family']
-when 'darwin'
+when 'mac_os_x'
   include_recipe 'gene-homebrew'
-  cask_package 'rubymine'
+  homebrew_cask 'rubymine'
 when 'alpine', 'arch', 'debian', 'fedora', 'gentoo', 'rhel'
   include_recipe 'gene-opt'
   include_recipe 'gene-jetbrains-ide::opt-jetbrains'
