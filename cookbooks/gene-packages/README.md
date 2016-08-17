@@ -1,4 +1,4 @@
-# gene-vim
+# gene-packages
 
 TODO: Enter the cookbook description here.
 
