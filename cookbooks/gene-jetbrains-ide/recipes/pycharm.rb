@@ -16,7 +16,7 @@ when 'alpine', 'arch', 'debian', 'fedora', 'gentoo', 'rhel'
     mode '0755'
   end
 
-  bash 'install-pycharm' do
+  bash 'Install pycharm' do
     cwd Chef::Config[:file_cache_path]
     code <<-EOF
       rm -rf /opt/jetbrains-ide/pycharm-#{version}
@@ -26,13 +26,13 @@ when 'alpine', 'arch', 'debian', 'fedora', 'gentoo', 'rhel'
 when 'windows'
   version = node['gene-jetbrains-ide']['pycharm-version']
   
-  remote_file "#{Chef::Config[:file_cache_path}/pycharm-#{version}.exe" do
+  remote_file "#{Chef::Config[:file_cache_path]}/pycharm-#{version}.exe" do
     source "#{node['gene-jetbrains-ide']['base_pycharm_url']}/pycharm-#{version}.exe"
     checksum node['gene-jetbrains-ide']['pycharm-windows-checksum']
     mode '0755'
   end
   
-  execute 'install-pycharm' do
-    command "#{Chef::Config[:file_cache_path}/pycharm-#{version}.exe /S"
+  execute 'Install pycharm' do
+    command "#{Chef::Config[:file_cache_path]}/pycharm-#{version}.exe /S"
   end
 end

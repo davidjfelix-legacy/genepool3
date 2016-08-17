@@ -16,7 +16,7 @@ when 'alpine', 'arch', 'debian', 'fedora', 'gentoo', 'rhel'
     mode '0755'
   end
 
-  bash 'install-' do
+  bash 'Install rubymine' do
     cwd Chef::Config[:file_cache_path]
     code <<-EOF
       rm -rf /opt/jetbrains-ide/rubymine-#{version}
