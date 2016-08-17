@@ -5,9 +5,9 @@ if node['platform_family'] == 'mac_os_x'
 end
 
 if node['platform_family'] == 'windows'
-  version = node['gene-packages']['gvim-version']
+  version = node['gene-packages']['gvim']['version']
   remote_file "#{Chef::Config[:file_cache_path]}/gvim-#{version}.exe" do
-    source "#{node['gene-packages']['gvim-windows-url']}"
+    source "#{node['gene-packages']['gvim']['windows-url']}"
     mode '0755'
   end
 
