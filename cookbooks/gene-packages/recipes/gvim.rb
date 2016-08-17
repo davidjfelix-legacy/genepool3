@@ -12,7 +12,7 @@ if node['platform_family'] == 'windows'
   end
 
   execute 'Install gvim' do
-    command "#{Chef::Config[:file_cache_path]}/gvim-#{version}.exe"
+    command "#{Chef::Config[:file_cache_path]}/gvim-#{version}.exe /TYPE=FULL /S /DD"
   end
 else 
   package 'Install gvim' do
